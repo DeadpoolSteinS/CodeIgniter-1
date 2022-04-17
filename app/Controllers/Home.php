@@ -8,4 +8,9 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+
+    public function showName($name = "Bellen", $date = 27)
+    {
+        echo "My name is $name, born on $date";
+    }
 }
